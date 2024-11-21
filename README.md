@@ -4,7 +4,7 @@ This code solves the advection equation with Harten-Yee's upwind scheme.
 # Introduction
 Let us consider the one-dimensional advection equation
 
-$$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial t}=0.$$
+$$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial x}=0.$$
 
 Unfortunately, it is impossible to keep monotonicity of its solutions with linear schemes more accurate than first-order ones because of Godunov's theorem. Instead, nonlinear high resolution schemes have been developed to solve the equation accurately, and Harten-Yee's upwind scheme [e.g. 1,2] is one of them.
 
