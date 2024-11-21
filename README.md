@@ -25,6 +25,16 @@ $$\gamma_{j+1/2}=\frac{\sigma(c_{j+1/2})(g_{j+1}-g_{j})}{\Delta_{j+1/2}}$$
 
 if $$\Delta_{j+1/2}\neq 0$$, and $$\gamma_{j+1/2}=0$$ if  $$\Delta_{j+1/2}=0$$.
 
+# What the code can do
+
+The code adopts Euler's explicit integral
+
+$$u_j^{n+1}=u_j^n-\frac{\Delta t}{\Delta x}(\tilde{f}_　{j+1/2}-\tilde{f}_　{j-1/2})$$
+
+to obtain the solution at the next time step.
+
+The following figure shows an example of the output. One can observe advection towards the positive x-direction without numerical oscillations.
+
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
 
