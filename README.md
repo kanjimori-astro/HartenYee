@@ -1,6 +1,10 @@
 # HartenYee
 This code solves the advection equation with Harten-Yee's upwind scheme.
 
+# Introduction
+Let us consider the one-dimensional advection equation
+$$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial t}=0.$$
+
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
 
