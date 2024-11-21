@@ -12,20 +12,18 @@ In this scheme, the modified flux is defined as
 
 $$\tilde{f}_　{j+1/2}=\frac{1}{2}((f_{j+1}+f_{j})+\phi_{j+1/2}),$$
 
-where
+where 
 
 $$\phi_{j+1/2}=\sigma(c_{j+1/2})(g_j+g_{j+1})-|c_{j+1/2}+\gamma_{j+1/2}|\Delta_{j+1/2},$$
-$$\Delta_{j+1/2}=u_{j+1}-u_{j}$$
+$$\Delta_{j+1/2}=u_{j+1}-u_{j},$$
 $$\sigma(z)=\frac{1}{2}\left(|z|-\frac{\Delta t}{\Delta x}z^2\right),$$
-$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}),$$
-$$\gamma_{j+1/2}=\left\{
-\begin{array}{ll}
-1 & (\Delta_{j+1/2}=0) \\
-2 & 2
-\end{array}
-\right.
-$$
+$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}).$$
 
+The modified characteristic velocity is defined as 
+
+$$\gamma_{j+1/2}=\frac{\sigma_{j+1/2}(g_{j+1}-g_[j})}{\Delta_{j+1/2}}$$
+
+if $$\Delta_{j+1/2}=\neq 0$$, and $$\gamma_{j+1/2}=0$$ if  $$\Delta_{j+1/2}=0$$. $$\Delta x$$ is the spatial resolution and $$\Delta t$$ is the time step.
 
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
