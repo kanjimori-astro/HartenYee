@@ -10,14 +10,22 @@ Unfortunatelly, it is impossible to keep monotonicity of solutions of the equati
 
 In this scheme, the modified flux is defined as
 
-$$\tilde{f}_　{j+1/2}=/frac{1}{2}((f_{j+1}+f_{j})+\phi_{j+1/2}),$$
+$$\tilde{f}_　{j+1/2}=\frac{1}{2}((f_{j+1}+f_{j})+\phi_{j+1/2}),$$
 
 where
 
 $$\phi_{j+1/2}=\sigma(c_{j+1/2})(g_j+g_{j+1})-|c_{j+1/2}+\gamma_{j+1/2}|\Delta_{j+1/2},$$
 $$\Delta_{j+1/2}=u_{j+1}-u_{j}$$
 $$\sigma(z)=\frac{1}{2}\left(|z|-\frac{\Delta t}{\Delta x}z^2\right),$$
-$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}).$$
+$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}),$$
+$$\gamma_{j+1/2}=\left\{
+\begin{array}{ll}
+1 & (\Delta_{j+1/2}=0) \\
+2 & 2
+\end{array}
+\right.
+$$
+
 
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
