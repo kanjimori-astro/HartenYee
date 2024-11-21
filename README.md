@@ -33,7 +33,7 @@ $$u_j^{n+1}=u_j^n-\frac{\Delta t}{\Delta x}(\tilde{f}_　{j+1/2}-\tilde{f}_　{j
 
 to obtain the solution at the next time step.
 
-The following figure shows an example of the output. One can observe advection towards the positive x-direction without numerical oscillations.
+The following figure shows an example of the output for $$c=1$$. One can observe advection towards the positive x-direction without numerical oscillations.
 ![スクリーンショット 2024-11-21 210059](https://github.com/user-attachments/assets/9275f61b-7e11-4f0a-9c89-2e983c537851)
 
 # References
