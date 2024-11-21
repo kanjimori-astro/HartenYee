@@ -21,7 +21,7 @@ $$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}).$$
 
 The modified characteristic velocity is defined as 
 
-$$\gamma_{j+1/2}=\frac{\sigma_{j+1/2}(g_{j+1}-g_[j})}{\Delta_{j+1/2}}$$
+$$\gamma_{j+1/2}=\frac{\sigma_{j+1/2}(g_{j+1}-g_{j})}{\Delta_{j+1/2}}$$
 
 if $$\Delta_{j+1/2}=\neq 0$$, and $$\gamma_{j+1/2}=0$$ if  $$\Delta_{j+1/2}=0$$. $$\Delta x$$ is the spatial resolution and $$\Delta t$$ is the time step.
 
