@@ -3,7 +3,21 @@ This code solves the advection equation with Harten-Yee's upwind scheme.
 
 # Introduction
 Let us consider the one-dimensional advection equation
+
 $$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial t}=0.$$
+
+Unfortunatelly, it is impossible to keep monotonicity of solutions of the equation with linear schemes more accurate than first-order ones because of Godunov's theorem. Instead, nonlinear high resolution schemes have been developed to solve the equation, and Harten-Yee's upwind scheme [e.g. 1,2] is one of them.
+
+In this scheme, the modified flux is defined as
+
+$$\tilde{f}_{j+1/2}=/frac{1}{2}((f_{j+1}+f{j})+\phi_{j+1/2}),$$
+
+where
+
+$$\phi_{j+1/2}=\sigma(c_{j+1/2})(g_j+g_{j+1})-|c_{j+1/2}+\gamma_{j+1/2}|\Delta_{j+1/2},$$
+$$\Delta_{j+1/2}=u_{j+1}-u_{j}$$
+$$\sigma(z)=\frac{1}{2}\left(|z|-\frac{\Delta t}{\Delta x}z^2\right),$$
+$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}).$$
 
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
