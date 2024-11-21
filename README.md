@@ -17,7 +17,7 @@ where
 $$\phi_{j+1/2}=\sigma(c_{j+1/2})(g_j+g_{j+1})-|c_{j+1/2}+\gamma_{j+1/2}|\Delta_{j+1/2},$$
 $$\Delta_{j+1/2}=u_{j+1}-u_{j},$$
 $$\sigma(z)=\frac{1}{2}\left(|z|-\frac{\Delta t}{\Delta x}z^2\right),$$
-$$g_j=\mathrm{minmod}(\Delta_{j+1/2},\,\Delta_{j-1/2}).$$
+$$g_j=\mathrm{minmod}(\Delta_{j+1/2}, \Delta_{j-1/2}).$$
 
 The modified characteristic velocity is defined as 
 
