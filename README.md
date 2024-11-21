@@ -19,11 +19,11 @@ $$\Delta_{j+1/2}=u_{j+1}-u_{j},$$
 $$\sigma(z)=\frac{1}{2}\left(|z|-\frac{\Delta t}{\Delta x}z^2\right),$$
 $$g_j=\mathrm{minmod}(\Delta_{j+1/2}, \Delta_{j-1/2}).$$
 
-The modified characteristic velocity is defined as 
+$$\Delta x$$ is the spatial resolution and $$\Delta t$$ is the time step. The modified characteristic velocity is defined as 
 
 $$\gamma_{j+1/2}=\frac{\sigma_{j+1/2}(g_{j+1}-g_{j})}{\Delta_{j+1/2}}$$
 
-if $$\Delta_{j+1/2}=\neq 0$$, and $$\gamma_{j+1/2}=0$$ if  $$\Delta_{j+1/2}=0$$. $$\Delta x$$ is the spatial resolution and $$\Delta t$$ is the time step.
+if $$\Delta_{j+1/2}=\neq 0$$, and $$\gamma_{j+1/2}=0$$ if  $$\Delta_{j+1/2}=0$$.
 
 # References
 [1] Yee (1987), NASA Technical Memorandum 89464.
