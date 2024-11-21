@@ -10,7 +10,7 @@ Unfortunatelly, it is impossible to keep monotonicity of solutions of the equati
 
 In this scheme, the modified flux is defined as
 
-$$\tilde{f}_{j+1/2}=/frac{1}{2}((f_{j+1}+f{j})+\phi_{j+1/2}),$$
+$$\tilde{f}_{j+1/2}=/frac{1}{2}((f_{j+1}+f_{j})+\phi_{j+1/2}),$$
 
 where
 
