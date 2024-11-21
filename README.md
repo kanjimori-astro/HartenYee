@@ -6,7 +6,7 @@ Let us consider the one-dimensional advection equation
 
 $$\frac{\partial u}{\partial t}+c\frac{\partial u}{\partial t}=0.$$
 
-Unfortunatelly, it is impossible to keep monotonicity of solutions of the equation with linear schemes more accurate than first-order ones because of Godunov's theorem. Instead, nonlinear high resolution schemes have been developed to solve the equation accurately, and Harten-Yee's upwind scheme [e.g. 1,2] is one of them.
+Unfortunately, it is impossible to keep monotonicity of solutions of the equation with linear schemes more accurate than first-order ones because of Godunov's theorem. Instead, nonlinear high resolution schemes have been developed to solve the equation accurately, and Harten-Yee's upwind scheme [e.g. 1,2] is one of them.
 
 In this scheme, the modified flux is defined as
 
